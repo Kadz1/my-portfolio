@@ -1,0 +1,32 @@
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+.navbar-brand {
+  max-width: 17.25rem !important;
+  height: 3.125rem;
+}
+
+.navbar-logo {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+nav a.nav-link {
+  /* font-weight: 500; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+.navbar-nav > li > a {
+  margin: auto 0.5rem;
+  color: #000000 !important;
+}
+
+.navbar-nav > li > a:hover {
+  color: rgb(181, 181, 181) !important;
+}
