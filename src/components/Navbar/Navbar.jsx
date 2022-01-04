@@ -6,9 +6,9 @@ const Navbar = () => {
     // <!--Main Navigation-->
  
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-scroll">
-    <div class="container-fluid">
+    <div class="container">
     <a className="navbar-brand" href="#">
-          <img className="navbar-logo" src="/images/kaLogo2.jpeg" alt="Logo" />
+          <img className="navbar-logo" src="/images/myLogo.png" alt="Logo" />
         </a>
         <button
           className="navbar-toggler ps-0"

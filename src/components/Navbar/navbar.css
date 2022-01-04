@@ -8,8 +8,9 @@ body {
 }
 
 .navbar-logo {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 8.125rem;
+  height: 2.125rem;
+  object-fit: cover;
 }
 
 nav ul li {
