@@ -23,10 +23,3 @@ const Home = () => {
 
 export default Home
 
-// {/* <img className="home-img" src="/images/background.jpg" alt="backgroung-image" />
-// <div className="col-md-6 main-intro">
-//     <h1 className="intro-h1">Hello, my <br></br>name is <b>Khadar</b>.</h1>
-//     <p className="intro-paragraph">
-//         Front end developer who writes clean, elegant and efficient code.                   
-//     </p>
-// </div>    */}

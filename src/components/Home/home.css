@@ -6,15 +6,47 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  --article-load-delay: 700ms;
 }
 
 .intro-h1 {
   font-size: 5.7rem;
   font-weight: normal;
   padding-bottom: 2rem;
+  animation: article-load 700ms ease-in var(--article-load-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-1.25rem);
+  opacity: 0;
 }
 
 .intro-paragraph {
   font-size: 2.9rem;
   font-weight: 200;
+  animation: paragraph-load 700ms ease-in
+    calc(var(--article-load-delay) + 300ms);
+  animation-fill-mode: forwards;
+  transform: translateY(-1.25rem);
+  opacity: 0;
+}
+
+@keyframes article-load {
+  0% {
+    transform: translateY(-1.25rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes paragraph-load {
+  0% {
+    transform: translateY(-1.25rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }

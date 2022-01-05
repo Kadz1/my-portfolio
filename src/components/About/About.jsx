@@ -4,7 +4,7 @@ import "./about.css";
 const About = () => {
   return (
     <div className="about-Wrapper">
-      <div className="container">
+      <div className="container about-container">
         <div className="row">
           <div className="col-md-12">
             <h1 className="about-H1">
@@ -24,7 +24,7 @@ const About = () => {
                 <div class="card-body">
                   <img
                     class="card-img"
-                    src="/images/why-img1.png"
+                    src="/images/why-img.jpeg"
                     alt="Image"
                   />
                   <p class="card-text">

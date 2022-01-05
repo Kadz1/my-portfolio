@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto Condensed" sans-serif;
+  --nav-load-time: 700ms;
 }
 
 .navbar-brand {
@@ -11,10 +12,12 @@ body {
   width: 8.125rem;
   height: 2.125rem;
   object-fit: cover;
+  animation: logo-load var(--nav-load-time) ease-in;
 }
 
 nav ul li {
   text-transform: uppercase;
+  animation: navbar-load var(--nav-load-time) ease-in;
 }
 
 nav a.nav-link {
@@ -30,4 +33,24 @@ nav a.nav-link {
 
 .navbar-nav > li > a:hover {
   color: rgb(181, 181, 181) !important;
+}
+
+@keyframes navbar-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-load {
+  0% {
+    transform: translateX(-250%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

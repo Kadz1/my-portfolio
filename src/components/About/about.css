@@ -4,6 +4,9 @@
   height: 70vh;
   width: 100%;
 }
+.about-container {
+  margin-left: 4rem;
+}
 
 .about-H1 {
   font-size: 3.2rem;
@@ -38,6 +41,12 @@
 
 .card {
   text-align: center;
+  transition: transform 0.2s ease;
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card-row {
