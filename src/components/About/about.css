@@ -1,68 +1,38 @@
 .about-Wrapper {
-  margin: 3rem;
-  position: relative;
-  height: 70vh;
-  width: 100%;
-}
-.about-container {
-  margin-left: 4rem;
+  font-family: "Playfair Display", serif;
+  color: #3a3a3a;
+  text-align: center;
 }
 
 .about-H1 {
+  margin-bottom: 2rem;
   font-size: 3.2rem;
-  font-weight: normal;
-  display: inline-block;
-  position: relative;
+  font-weight: 500;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 0.7rem;
 }
 
 .about-H1::before {
   content: "";
+  height: 0.175rem;
+  width: 5%;
+  background-color: #ff6666;
   position: absolute;
-  width: 35%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  border-bottom: 0.2rem solid #d60023;
+  bottom: -1.9em;
+  left: 50%;
+  transform: translate(-105%);
 }
 
 .full-stop {
-  font-size: 3.9rem;
-  color: #d60023;
+  font-size: 3.5rem;
+  color: #ff6666;
 }
 
 .about-info-text {
-  font-size: 1.6rem;
+  width: 70%;
+  margin: auto;
+  font-size: 1.5rem;
   padding-top: 1.4rem;
   font-weight: 200;
-  text-align: justify;
-}
-
-.card {
-  text-align: center;
-  transition: transform 0.2s ease;
-  margin-bottom: 3rem;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card-row {
-  margin-top: 3rem;
-}
-
-.card-img {
-  width: 10rem;
-  height: 10rem;
-  margin-bottom: 2.5rem;
-  object-fit: fill;
-}
-
-.card-text {
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
 }

@@ -1,0 +1,136 @@
+.skills-Wrapper {
+  margin-top: 7rem;
+  height: 60vh;
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.skills-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.skills-h1 {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills-Header {
+  font-size: 2.5rem;
+  margin: auto;
+  text-align: center;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.parallax-outer {
+  height: 100%;
+  width: 100%;
+}
+
+.parallax-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.parallax-inner {
+  position: relative;
+  color: #ff6666;
+  opacity: 0.5;
+}
+.javascript {
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  top: 3.125;
+  left: 90%;
+  font-size: 3.2em;
+}
+
+.react {
+  position: absolute;
+  z-index: -1;
+  top: 30%;
+  left: 35%;
+  font-size: 2em;
+}
+
+.html {
+  position: absolute;
+  z-index: -1;
+  font-weight: 400;
+  top: 70%;
+  left: 85%;
+  font-size: 2.9em;
+}
+
+.css {
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: 5%;
+  font-size: 2.7em;
+}
+
+.mongo {
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: 25%;
+  font-size: 1.9em;
+}
+
+.bootstrap {
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  left: 65%;
+  font-size: 2.7em;
+}
+
+.node {
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  top: 80%;
+  left: 45%;
+  font-size: 2.5em;
+}
+
+.z {
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  font-weight: 400;
+  top: 50%;
+  left: 75%;
+  font-size: 1.2rem;
+}
+
+.x {
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  font-weight: 400;
+  top: 30%;
+  left: 15%;
+  font-size: 1.2rem;
+}
+
+.github {
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  top: 10%;
+  left: 25%;
+  font-size: 2.5em;
+}
