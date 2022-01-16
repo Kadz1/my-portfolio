@@ -1,24 +1,35 @@
 .projects-Wrapper {
-  margin-top: 3rem;
+  font-family: "Playfair Display", serif;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 0;
+  padding-top: 5rem;
+  position: relative;
+  background-color: white;
+  z-index: 5;
 }
 
 .projects-header {
-  margin: 3rem;
-  font-size: 3.2rem;
-  font-weight: normal;
+  font-size: 2.5rem;
+  margin: auto;
   text-align: center;
+  color: #3a3a3a;
+  font-weight: bold;
 }
 
 .projects-para {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: auto;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
 .card-container {
-  padding: 1em 0;
-  width: 100%;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  width: 83%;
   height: 100%;
 }
 
@@ -45,13 +56,14 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay {
-  opacity: 1;
+.content-image {
+  height: 27rem;
+  width: 100%;
+  object-fit: fill;
 }
 
-.content-image {
-  width: 100%;
-  height: 100%;
+.content:hover .content-overlay {
+  opacity: 1;
 }
 
 .content-details {
@@ -78,16 +90,17 @@
 }
 
 .content-details h3 {
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  color: #3a3a3a;
+  font-weight: 700;
+
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
 .content-details p {
-  color: rgb(0, 0, 0);
-  font-size: 0.8em;
+  color: #3a3a3a;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .fadeIn-bottom {

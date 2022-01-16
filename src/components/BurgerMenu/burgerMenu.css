@@ -1,0 +1,69 @@
+nav {
+  justify-content: space-between;
+  background-color: #fff;
+  height: 4rem;
+  z-index: 10;
+}
+
+.burgerMenu-container {
+  width: 90%;
+  padding: 0 !important;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.logo {
+  color: #3a3a3a;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 20;
+}
+
+.hamBurgerMenu {
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: #3a3a3a;
+  z-index: 20;
+}
+
+.menu {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  display: block;
+  text-align: right;
+  z-index: 15;
+}
+
+.menu-items {
+  margin-right: 5%;
+  margin-top: 7rem;
+}
+
+.menu-ul {
+  list-style: none;
+}
+
+.menu-li {
+  margin-top: 2.5rem;
+}
+
+.menu-ul > li > a:hover {
+  color: #ff6666 !important;
+}
+
+.menu-link {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #3a3a3a;
+  text-decoration: none;
+}

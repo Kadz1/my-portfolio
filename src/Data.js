@@ -1,7 +1,7 @@
 export const ProjectsCards = [
   {
     id: 0,
-    image: "/images/To-Do-List.jpeg",
+    image: "/images/toDoList1.png",
     description: "To Do App",
   },
   {
@@ -16,7 +16,7 @@ export const ProjectsCards = [
   },
   {
     id: 3,
-    image: "/images/weather-img.jpeg",
+    image: "/images/weather-app1.png",
     description: "Weather App",
   },
   {
@@ -25,8 +25,8 @@ export const ProjectsCards = [
     description: "Personal Blog",
   },
   {
-    id: 3,
-    image: "/images/weather-img.jpeg",
-    description: "Weather App",
+    id: 5,
+    image: "/images/toDoList1.png",
+    description: "To Do App",
   },
 ];

@@ -1,8 +1,10 @@
 .skills-Wrapper {
-  margin-top: 7rem;
   height: 60vh;
+  padding-top: 3rem;
+  background-color: white;
   position: relative;
   font-family: "Playfair Display", serif;
+  z-index: 5;
 }
 .skills-container {
   height: 100%;
@@ -101,7 +103,7 @@
   position: absolute;
   margin: 0;
   z-index: -1;
-  top: 80%;
+  top: 75%;
   left: 45%;
   font-size: 2.5em;
 }
@@ -133,4 +135,10 @@
   top: 10%;
   left: 25%;
   font-size: 2.5em;
+}
+
+@media (max-width: 600px) {
+  .skills-Wrapper {
+    display: none;
+  }
 }
