@@ -8,7 +8,9 @@ import {
   FaBootstrap,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiMongodb, SiJavascript } from "react-icons/si";
+import { SiMongodb, SiJavascript, SiMysql } from "react-icons/si";
+import Parallax from "react-rellax";
+
 const Skills = () => {
   return (
     <div className="skills-Wrapper">
@@ -16,14 +18,23 @@ const Skills = () => {
         <div className="container skills-h1">
           <h1 className="skills-Header">My Skills</h1>
         </div>
-        <div className="parallax-outer">
-          <div className="parallax-inner">
-            <p className="javascript">
-              <SiJavascript />
-            </p>
+
+        <div className="conatiner parallax-inner">
+          <Parallax speed={1.7} className="parallax">
             <p className="react">
               <FaReact />
             </p>
+            <p className="github">
+              <FaGithub />
+            </p>
+            <p className="bootstrap">
+              <FaBootstrap />
+            </p>
+
+            <p className="javascript">
+              <SiJavascript />
+            </p>
+
             <p className="html">
               <FaHtml5 />
             </p>
@@ -33,18 +44,17 @@ const Skills = () => {
             <p className="mongo">
               <SiMongodb />
             </p>
-            <p className="bootstrap">
-              <FaBootstrap />
-            </p>
+
             <p className="node">
               <FaNodeJs />
             </p>
+
             <p className="z">ES6</p>
             <p className="x">HTML</p>
-            <p className="github">
-              <FaGithub />
+            <p className="mysql">
+              <SiMysql />
             </p>
-          </div>
+          </Parallax>
         </div>
       </div>
     </div>
