@@ -1,105 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
 .skills-Wrapper {
   height: 60vh;
-
-  background-color: white;
   position: relative;
-  font-family: "Playfair Display", serif;
+  background-color: #fff;
   z-index: 5;
 }
-.skills-container {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
 
-.skills-h1 {
-  justify-content: center;
-  text-align: center;
+.skills-Header {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #3a3a3a;
   position: absolute;
-  display: flex;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
-.skills-Header {
-  font-size: 2.5rem;
-  margin: auto;
-  text-align: center;
-  color: #3a3a3a;
-  font-weight: bold;
-}
-
-.parallax-inner {
-  height: 100%;
-  width: 100%;
-}
-
-.parallax-inner {
-  position: relative;
-  display: fixed;
+.animation-container {
   color: #ff6666;
   opacity: 0.5;
 }
 
-.parallax {
-  position: relative;
-  margin-top: 0;
-  padding-top: 0;
-  height: 80%;
-  top: 40%;
+/* Bounce Animation */
+/* 
+.bounce {
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
+.bounce span {
+  color: #ff6666;
+  opacity: 0.5;
+  display: inline-block;
+  animation: bounce 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes bounce {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+} */
+
+/* Skills Icons */
 
 .react {
-  position: relative;
-  top: 15%;
-  left: 45%;
-  font-size: 2em;
+  --i: 1;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-size: 2.3em;
 }
 
 .github {
+  --i: 2;
   position: absolute;
   margin: 0;
-  top: 0%;
+  top: 15%;
   left: 25%;
   font-size: 2.5em;
 }
 
 .bootstrap {
-  position: relative;
-  top: 5%;
+  --i: 3;
+  position: absolute;
+  top: 13%;
   left: 65%;
   font-size: 2.7em;
 }
 
 .javascript {
+  --i: 4;
   position: absolute;
-  top: 5%;
-  left: 85%;
+  top: 7%;
+  left: 82%;
   font-weight: 400;
   top: 3.125;
   font-size: 3.2em;
 }
 
-.html {
-  position: absolute;
-
-  top: 62%;
-  left: 63%;
-  font-size: 2em;
-}
-
-.mysql {
-  position: absolute;
-
-  font-weight: 400;
-  top: 67%;
-  left: 83%;
-  font-size: 2.9em;
-}
-
 .css {
+  --i: 0;
   position: absolute;
   top: 60%;
   left: 10%;
@@ -107,6 +96,7 @@
 }
 
 .mongo {
+  --i: 1;
   position: absolute;
   top: 60%;
   left: 30%;
@@ -114,32 +104,70 @@
 }
 
 .node {
+  --i: 2;
   position: absolute;
   margin: 0;
-
   top: 75%;
   left: 45%;
   font-size: 2.5em;
 }
 
-.z {
+.html {
+  --i: 3;
+  position: absolute;
+  top: 62%;
+  left: 63%;
+  font-size: 2em;
+}
+
+.ES6 {
+  --i: 4;
   position: absolute;
   margin: 0;
-
   font-weight: 400;
   top: 50%;
   left: 75%;
   font-size: 1.2rem;
 }
 
-.x {
+.mysql {
+  --i: 5;
+  position: absolute;
+  font-weight: 400;
+  top: 67%;
+  left: 80%;
+  font-size: 3.2em;
+}
+
+.api {
+  --i: 0;
   position: absolute;
   margin: 0;
-
   font-weight: 400;
   top: 30%;
   left: 15%;
   font-size: 1.2rem;
+}
+
+/* hr */
+
+hr {
+  margin: 0rem auto 3rem auto;
+  width: 80%;
+  border: 0.1rem solid #000000;
+  opacity: 1;
+}
+
+hr {
+  margin-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  border: 0.1rem solid #000000;
+  opacity: 1;
 }
 
 @media (max-width: 600px) {

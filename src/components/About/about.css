@@ -16,17 +16,6 @@
   padding-bottom: 0.7rem;
 }
 
-.about-H1::before {
-  content: "";
-  height: 0.175rem;
-  width: 5%;
-  background-color: #ff6666;
-  position: absolute;
-  bottom: -3em;
-  left: 50%;
-  transform: translate(-120%);
-}
-
 .full-stop {
   font-size: 3.5rem;
   color: #ff6666;

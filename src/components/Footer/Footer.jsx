@@ -3,6 +3,7 @@ import React from "react";
 import { MdMail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (

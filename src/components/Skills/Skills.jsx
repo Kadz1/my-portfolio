@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./skills.css";
 import {
   FaGithub,
@@ -8,55 +8,89 @@ import {
   FaBootstrap,
   FaNodeJs,
 } from "react-icons/fa";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { SiMongodb, SiJavascript, SiMysql } from "react-icons/si";
 import Parallax from "react-rellax";
 
 const Skills = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+
+    if (inView) {
+      animation.start({
+        // x: 0,
+        // transition: { type: "spring", duration: 1, bounce: 0.3 },
+        scale: 0,
+        transition: {
+          type: "spring",
+          stiffness: 260,
+          damping: 40,
+        },
+        rotate: [0, 360],
+        scale: 1,
+      });
+    }
+    if (!inView) {
+      animation.start({
+        scale: 0,
+      });
+    }
+  }, [inView]);
+
   return (
-    <div className="skills-Wrapper">
+    <div ref={ref} className="skills-Wrapper">
       <div className="container skills-container">
-        <div className="container skills-h1">
-          <h1 className="skills-Header">My Skills</h1>
-        </div>
-
-        <div className="conatiner parallax-inner">
-          <Parallax speed={1.7} className="parallax">
-            <p className="react">
-              <FaReact />
-            </p>
-            <p className="github">
-              <FaGithub />
-            </p>
-            <p className="bootstrap">
-              <FaBootstrap />
-            </p>
-
-            <p className="javascript">
-              <SiJavascript />
-            </p>
-
-            <p className="html">
-              <FaHtml5 />
-            </p>
-            <p className="css">
-              <FaCss3Alt />
-            </p>
-            <p className="mongo">
-              <SiMongodb />
-            </p>
-
-            <p className="node">
-              <FaNodeJs />
-            </p>
-
-            <p className="z">ES6</p>
-            <p className="x">HTML</p>
-            <p className="mysql">
-              <SiMysql />
-            </p>
-          </Parallax>
+        <h1 className="skills-Header">Skills</h1>
+      </div>
+      <div>
+        <div className="animation-container">
+          <motion.span
+            animate={animation}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            className="react"
+          >
+            <FaReact />
+          </motion.span>
+          <motion.span animate={animation} className="javascript ">
+            <SiJavascript />
+          </motion.span>
+          <motion.span animate={animation} className="github">
+            <FaGithub />
+          </motion.span>
+          <motion.span animate={animation} className="bootstrap">
+            <FaBootstrap />
+          </motion.span>
+          <motion.span animate={animation} className="html">
+            <FaHtml5 />
+          </motion.span>
+          <motion.span animate={animation} className="css">
+            <FaCss3Alt />
+          </motion.span>
+          <motion.span animate={animation} className="mongo">
+            <SiMongodb />
+          </motion.span>
+          <motion.span animate={animation} className="node">
+            <FaNodeJs />
+          </motion.span>
+          <motion.span animate={animation} className="mysql">
+            <SiMysql />
+          </motion.span>
+          <motion.span animate={animation} className="ES6">
+            ES6
+          </motion.span>
+          <motion.span animate={animation} className="api">
+            API
+          </motion.span>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
