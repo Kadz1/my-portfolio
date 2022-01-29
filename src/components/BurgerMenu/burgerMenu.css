@@ -2,17 +2,29 @@ nav {
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4.5rem;
+  transition-timing-function: ease-in;
+  transition: 0.4s;
   z-index: 10;
+}
+
+.navHide {
+  opacity: 0;
 }
 
 .burgerMenu-container {
   width: 90%;
   padding: 0 !important;
+}
+
+.navbarFixed {
+  padding-top: 0.5rem;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding-left: 0.5rem;
 }
 
 .logo {
@@ -26,7 +38,7 @@ nav {
 
 .hamBurgerMenu {
   cursor: pointer;
-  font-size: 2.5rem;
+  transform: scale(1.1);
   color: #3a3a3a;
   z-index: 20;
 }
@@ -49,6 +61,12 @@ nav {
 .contact-form-container {
   margin-top: 3.8rem;
 }
+
+@media (max-width: 650px) {
+  .contact-form-container {
+    display: none;
+  }
+}
 .menu-ul-container {
   display: flex;
   justify-content: end;
@@ -64,12 +82,12 @@ nav {
 }
 
 .menu-ul > li > a:hover {
-  color: #6e77f4 !important;
+  color: var(--color-accent) !important;
 }
 
 .menu-link {
   font-size: 3.5rem;
   font-weight: 600;
-  color: #3a3a3a;
+  color: var(--color-secondary);
   text-decoration: none;
 }

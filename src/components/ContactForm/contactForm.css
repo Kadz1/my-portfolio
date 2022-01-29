@@ -7,7 +7,6 @@
 
 .contact-container {
   padding: 0 !important;
-
   height: 550px;
   width: 800px;
   background-color: rgb(255, 255, 255);
@@ -66,100 +65,8 @@
   border: none !important;
   border-bottom: 2px solid #6e77f4 !important;
 }
-/* 
-.box input {
-  padding: 10px 0;
-  margin-bottom: 30px;
+@media (max-width: 1350px) {
+  .contact-wrapper {
+    display: none;
+  }
 }
-
-.box textarea {
-  height: 60px;
-  padding: 10px 0;
-  margin-bottom: 40px;
-}
-.box input,
-.box textarea {
-  width: 80%;
-  box-sizing: border-box;
-  box-shadow: none;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #6e77f4;
-}
-
-.box textarea {
-  margin-bottom: 20px;
-}
-
-.box input[type="submit"] {
-  border: none;
-  cursor: pointer;
-  background-color: #6e77f4;
-  color: #fff;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.box form div {
-  position: relative;
-}
-
-.box form div label {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  pointer-events: none;
-  columns: #999;
-  transition: 0.5s;
-}
-
-.box input:focus + label,
-.box textarea:focus + label {
-  transform: translate3d(0, -100%, 0);
-}
-
-.box input:not(:focus) + label,
-.box textarea:not(:focus) + label {
-  transform: translate3d(0, -100%, 0);
-} */
-
-/* .form-group {
-  margin: 1rem;
-  position: relative;
-} */
-
-/* Input Area*/
-/* 
-.form-group input,
-.form-group textarea {
-  padding: 0.7rem 0;
-  border: 2px solid #3a3a3a;
-  margin-bottom: 1.875rem;
-  background: none;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 80%;
-
-  box-shadow: none;
-  outline: none;
-}
-
-.form-group label {
-  position: absolute;
-  top: 10px;
-} */
-/* Message Area  */
-
-/* Button Area */
-
-/* .contact-button {
-  margin: 0.5rem;
-  background-color: #6e77f4;
-  color: #fff;
-}
-
-.contact-button:hover {
-  color: #3a3a3a;
-} */

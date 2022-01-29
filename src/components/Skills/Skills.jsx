@@ -20,12 +20,8 @@ const Skills = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("use effect hook, inView = ", inView);
-
     if (inView) {
       animation.start({
-        // x: 0,
-        // transition: { type: "spring", duration: 1, bounce: 0.3 },
         scale: 0,
         transition: {
           type: "spring",
@@ -50,12 +46,7 @@ const Skills = () => {
       </div>
       <div>
         <div className="animation-container">
-          <motion.span
-            animate={animation}
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            className="react"
-          >
+          <motion.span animate={animation} className="react">
             <FaReact />
           </motion.span>
           <motion.span animate={animation} className="javascript ">

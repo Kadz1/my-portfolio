@@ -12,7 +12,7 @@
   font-size: 2.5rem;
   margin: 5rem auto 2rem auto;
   text-align: center;
-  color: #3a3a3a;
+  color: var(--color-secondary);
   font-weight: bold;
 }
 
@@ -27,6 +27,7 @@
 .card-container {
   margin: 0 auto !important;
   padding: 0 !important;
+  cursor: pointer;
   width: 85%;
   height: 100%;
 }
@@ -88,7 +89,7 @@
 }
 
 .content-details h3 {
-  color: #3a3a3a;
+  color: var(--color-secondary);
   font-weight: 700;
 
   margin-bottom: 0.5em;

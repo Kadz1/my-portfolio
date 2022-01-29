@@ -16,19 +16,17 @@ const Footer = () => {
                 <h1 className="footer-h2">KΛ.</h1>
               </div>
               <div className="footer-details">
-                <div className="col-lg-5 col-md-6 col-sm-12  ">
+                <div className="col-lg-5 col-md-6 col-sm-12  column">
                   <span className="footer-slogan">Let's Get Creative</span>
                   <br />
                   <span className="footer-text">
-                    {" "}
                     © 2021 All Rights Reserved
                   </span>
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-12 ">
+                <div className="col-lg-6 col-md-6 col-sm-12 column">
                   <span className="footer-text">K.Arteh@hotmail.com</span>
                   <br />
                   <span className="footer-text">
-                    {" "}
                     © 2021 All Rights Reserved
                   </span>
                 </div>
@@ -39,14 +37,16 @@ const Footer = () => {
             <div className="footer-social">
               <span className="footer-social-title">Keep In Touch</span>
               <div className="social-media">
-                <a className="social-icons">
+                <a className="social-icons" href="#">
                   <MdMail className="fa" />
                 </a>
                 <a className="social-icons">
                   <AiFillLinkedin />
                 </a>
                 <a className="social-icons">
-                  <BsGithub />
+                  <span>
+                    <BsGithub />
+                  </span>
                 </a>
               </div>
             </div>

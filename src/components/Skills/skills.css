@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif;
 }
 
 .skills-Wrapper {
+  font-family: "Playfair Display", serif;
   height: 60vh;
   position: relative;
   background-color: #fff;
@@ -14,7 +14,7 @@ body {
 .skills-Header {
   font-size: 3.2rem;
   font-weight: 500;
-  color: #3a3a3a;
+  color: var(--color-secondary);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,34 +23,9 @@ body {
 }
 
 .animation-container {
-  color: #ff6666;
+  color: var(--color-primary);
   opacity: 0.5;
 }
-
-/* Bounce Animation */
-/* 
-.bounce {
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-}
-.bounce span {
-  color: #ff6666;
-  opacity: 0.5;
-  display: inline-block;
-  animation: bounce 1s infinite;
-  animation-delay: calc(0.1s * var(--i));
-}
-@keyframes bounce {
-  0%,
-  40%,
-  100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-20px);
-  }
-} */
-
-/* Skills Icons */
 
 .react {
   --i: 1;
@@ -166,7 +141,7 @@ hr {
   left: 50%;
   transform: translate(-50%, 0);
   width: 80%;
-  border: 0.1rem solid #000000;
+  border: 0.1rem solid var(--color-secondary);
   opacity: 1;
 }
 
