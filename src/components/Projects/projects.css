@@ -1,6 +1,7 @@
 .projects-Wrapper {
   font-family: "Playfair Display", serif;
   min-height: 100vh;
+  width: 85%;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -8,26 +9,122 @@
   z-index: 5;
 }
 
+.card-container {
+  padding-top: 7rem;
+}
+
 .projects-header {
-  font-size: 2.5rem;
-  margin: 5rem auto 2rem auto;
+  font-size: 4.5rem;
   text-align: center;
+  font-family: "Montserrat";
   color: var(--color-secondary);
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .projects-para {
-  text-align: center;
-  margin: 3rem auto 8rem auto;
+  margin-top: 3rem;
   padding: auto;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.card-container {
+.nopadding {
+  padding: 0 !important;
+  margin: 0 auto 2rem 0 !important;
+}
+
+.box {
+  height: 25rem;
+  width: 27rem;
+  color: var(--color-secondary);
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.box:hover img {
+  opacity: 0;
+}
+.box-content {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.box:hover .box-content {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.box .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.box .post {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0 0 5px;
+  display: block;
+}
+.box .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translate(-100%, -50%);
+  display: flex;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+.fadeIn-right {
+  left: 80%;
+}
+@media only screen and (max-width: 990px) {
+  .box {
+    margin: 0 0 30px;
+  }
+}
+
+/* .card-container {
   margin: 0 auto !important;
   padding: 0 !important;
   cursor: pointer;
+  position: relative;
   width: 85%;
   height: 100%;
 }
@@ -55,10 +152,18 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
+.image-background {
+  padding: relative;
+}
+
 .content-image {
-  height: 35rem;
-  width: 100%;
-  object-fit: cover;
+  height: 30rem;
+  width: 35rem;
+  padding: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .content:hover .content-overlay {
@@ -116,4 +221,4 @@
 
 .fadeIn-right {
   left: 80%;
-}
+} */

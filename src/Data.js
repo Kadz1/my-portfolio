@@ -1,7 +1,8 @@
 export const ProjectsCards = [
   {
     id: 0,
-    image: "/images/toDoList1.png",
+    image:
+      "https://us.123rf.com/450wm/wernerimages/wernerimages1510/wernerimages151000176/46622253-alarm-clock-on-blue-table-with-to-do-list.jpg?ver=6",
     description: "To Do App",
   },
   {
@@ -12,7 +13,7 @@ export const ProjectsCards = [
   {
     id: 2,
     image: "/images/eCommerce-img.png",
-    description: "E-commerce",
+    description: "E-Commerce",
   },
   {
     id: 3,
@@ -24,9 +25,10 @@ export const ProjectsCards = [
     image: "/images/blog-img.png",
     description: "Personal Blog",
   },
-  {
-    id: 5,
-    image: "/images/toDoList1.png",
-    description: "To Do App",
-  },
+  // {
+  //   id: 5,
+  //   image:
+  //     "https://us.123rf.com/450wm/wernerimages/wernerimages1510/wernerimages151000176/46622253-alarm-clock-on-blue-table-with-to-do-list.jpg?ver=6",
+  //   description: "To Do App",
+  // },
 ];

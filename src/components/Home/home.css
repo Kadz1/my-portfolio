@@ -49,8 +49,9 @@
 
 /* Header & Paragraph */
 
-.intro-h1 {
-  font-size: 2.7rem;
+.intro-h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
   color: var(--color-secondary);
   font-weight: bold;
   margin-top: 0;
@@ -60,12 +61,25 @@
   opacity: 0;
 }
 
-.intro-paragraph {
-  font-size: 5.9rem;
+.intro-h2 {
+  font-family: "Montserrat";
+  font-size: 5.5rem;
   color: #fff;
   font-weight: 800;
   animation: paragraph-load 500ms ease-in
     calc(var(--article-load-delay) + 200ms);
+  animation-fill-mode: forwards;
+  transform: translateY(-1.25rem);
+  opacity: 0;
+}
+
+.intro-h1 {
+  font-family: "Montserrat";
+  font-size: 6.5rem;
+  color: #fff;
+  font-weight: 800;
+  animation: paragraph-load 500ms ease-in
+    calc(var(--article-load-delay) + 400ms);
   animation-fill-mode: forwards;
   transform: translateY(-1.25rem);
   opacity: 0;

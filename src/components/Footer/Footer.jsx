@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer>
-      <div className="ontainer-fluid footer-container">
+      <div className="container-fluid footer-container">
         <div className="row no-gutters footer-row">
           <div className="col-lg-8 no-gutters-col footer-col">
             <div className="footer-content">

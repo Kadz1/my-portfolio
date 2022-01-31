@@ -1,0 +1,45 @@
+.blog-Wrapper {
+  font-family: "Montserrat";
+  min-height: 75vh;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  color: var(--color-secondary);
+  background-color: white;
+  z-index: 5;
+}
+
+.blog-container {
+  padding-top: 3rem;
+}
+
+.blog-slogan-container {
+  margin-bottom: 1.8rem;
+}
+
+.blog-slogan {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.blog-h1 {
+  font-size: 4.7rem;
+  font-weight: 800;
+}
+
+.blog-content {
+  margin-top: 3.5rem;
+}
+
+.blog-h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.blog-p {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
