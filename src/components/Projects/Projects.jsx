@@ -1,96 +1,92 @@
 import React from "react";
 import "./projects.css";
 import { ProjectsCards } from "../../Data";
+import ButtonAnimation from "../ButtonAnimation/ButtonAnimation.js";
 
 const Projects = () => {
-  const Card = () => {
-    return (
-      <>
+  return (
+    <div className="projects-Wrapper">
+      <div className="card_container" id="projects">
         {ProjectsCards.map((item) => {
           return (
-            <div class="col-md-4 col-sm-6 nopadding ">
-              <div class="box">
-                <img src={item.image} alt="" />
-                <div class="box-content">
-                  <h3 class="title">{item.description}</h3>
-                  <span class="post">Web designer</span>
+            <div
+              key={item.id}
+              className={`card ${item.id === 2 ? `card3` : ``}`}
+            >
+              <img
+                src={item?.image}
+                className="card__image"
+                className={`card__image ${item.id === 2 ? `eCommerc_img` : ``}`}
+              />
+              <div class="card__overlay">
+                <div class="overlay__text">
+                  <h3>{item?.description}</h3>
+                  <p>Plan your next adventure</p>
+                  <ButtonAnimation label="GitHub" />
                 </div>
-                <ul class="icon">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-search"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           );
         })}
-      </>
-    );
-  };
-  return (
-    <div className="projects-Wrapper" id="projects">
-      <div className="container-fluid card-container">
-        <div className="row">
-          <div className="col-md-4 col-sm-6 nopadding">
-            <h1 className="projects-header">
-              Projects
-              <span className="full-stop">.</span>
-            </h1>
-            <p class="projects-para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem facilis tenetur asperiores!
-            </p>
-          </div>
-          <Card />
-        </div>
       </div>
     </div>
   );
 };
 
 export default Projects;
-
-// const Card = () => {
-//   return (
-//     <>
-//       {ProjectsCards.map((item) => {
-//         return (
-//           <div className="col-lg-4 col-md-6 col-sm-12 ">
-//             <div class="content">
-//               <div class="content-overlay"></div>
-//               <div className="image-background">
-//                 <img class="content-image" src={item.image} alt="" />
-//               </div>
-//               <div class="content-details fadeIn-top">
-//                 <h3>{item.description}</h3>
-//                 <p>This is a short description</p>
-//               </div>
+//  <div className="card card2">
+//           <img
+//             src="/images/27E2D14A-7B43-4363-8CFE-BB07DB84F13D_1_201_a.jpeg"
+//             class="card__image"
+//           />
+//           <div class="card__overlay">
+//             <div class="overlay__text">
+//               <h3>Social Media App</h3>
+//               <p>Plan your next adventure</p>
+//               <GlobalComponents label="GitHub" />
 //             </div>
 //           </div>
-//         );
-//       })}
-//     </>
-//   );
-// };
-
-//  {/* <div className="container">
-//     <div className="row">
-//       <h1 className="projects-header">Projects</h1>
-//       <p class="projects-para">
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-//         Exercitationem facilis tenetur asperiores!
-//       </p>
-//     </div>
-//   </div>
-//   <div class="container-fluid card-container">
-//     <div className="row g-0 card-row">
-//       <Card />
-//     </div>
-//   </div> */}
+//         </div>
+//         <div className="card card3">
+//           <img
+//             className="eCommerc_img"
+//             src="/images/pexels-nataliya-vaitkevich-6214452.jpg"
+//             alt=""
+//           />
+//           <div class="card__overlay">
+//             <div class="overlay__text">
+//               <h3>E-Commerce</h3>
+//               <p>Plan your next adventure</p>
+//               <GlobalComponents label="GitHub" />
+//             </div>
+//           </div>
+//         </div>
+//         <div className="card card1">
+//           <img src="/images/Blog.jpg" class="card__image" />
+//           <div class="card__overlay">
+//             <div class="overlay__text">
+//               <h3>Personal Blog</h3>
+//               <p>Plan your next adventure</p>
+//               <GlobalComponents label="GitHub" />
+//             </div>
+//           </div>
+//         </div>
+//         <div className="card card2">
+//           <div class="card__overlay">
+//             <div class="overlay__text">
+//               <h3>Mountain Trips</h3>
+//               <p>Plan your next adventure</p>
+//               <GlobalComponents label="GitHub" />
+//             </div>
+//           </div>
+//         </div>
+//         <div className="card card1">
+//           <img src="/images/to-do.jpg" class="card__image" />
+//           <div class="card__overlay">
+//             <div class="overlay__text">
+//               <h3>To Do App</h3>
+//               <p>Plan your next adventure</p>
+//               <GlobalComponents label="GitHub" />
+//             </div>
+//           </div>
+//         </div>

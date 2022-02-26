@@ -1,6 +1,6 @@
 .blog-Wrapper {
   font-family: "Montserrat";
-  min-height: 75vh;
+  min-height: 81vh;
   width: 85%;
   margin: 0 auto;
   padding: 0;
@@ -11,7 +11,7 @@
 }
 
 .blog-container {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .blog-slogan-container {
@@ -20,12 +20,13 @@
 
 .blog-slogan {
   font-family: "Playfair Display", serif;
+  font-style: italic;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 .blog-h1 {
-  font-size: 4.7rem;
+  font-size: var(--secondary-font-size);
   font-weight: 800;
 }
 
@@ -42,4 +43,13 @@
   padding-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.date-container {
+  margin-top: 1.8rem;
+}
+
+.blog-date {
+  font-size: 1.1rem;
+  font-weight: 600;
 }

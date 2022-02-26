@@ -1,11 +1,12 @@
 nav {
   justify-content: space-between;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font-family);
+  color: var(--color-secondary);
   background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4.5rem;
+  height: 5rem;
   transition-timing-function: ease-in;
   transition: 0.4s;
   z-index: 10;
@@ -28,18 +29,17 @@ nav {
 }
 
 .logo {
-  color: #3a3a3a;
+  font-family: var(--tertiary-font-family);
   margin-bottom: 0;
   padding: 0;
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: bold;
   z-index: 20;
 }
 
 .hamBurgerMenu {
   cursor: pointer;
-  transform: scale(1.1);
-  color: #3a3a3a;
+  transform: scale(1.3);
   z-index: 20;
 }
 
@@ -54,7 +54,6 @@ nav {
 }
 
 .menu-items {
-  margin-right: 5%;
   margin-top: 5rem;
 }
 
@@ -62,23 +61,21 @@ nav {
   margin-top: 3.8rem;
 }
 
-@media (max-width: 650px) {
-  .contact-form-container {
-    display: none;
-  }
-}
 .menu-ul-container {
   display: flex;
   justify-content: end;
   display: block;
-  text-align: right;
 }
 .menu-ul {
+  margin-right: 5rem;
   list-style: none;
+  position: absolute;
+  right: 0;
+  text-align: right;
 }
 
 .menu-li {
-  margin-top: 2.5rem;
+  margin-top: 2.2rem;
 }
 
 .menu-ul > li > a:hover {
@@ -86,8 +83,31 @@ nav {
 }
 
 .menu-link {
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 3.9rem;
+  font-weight: 800;
   color: var(--color-secondary);
   text-decoration: none;
+}
+
+@media (max-width: 1333.8px) {
+  .menu-ul {
+    transition: all 0.3s ease-in-out;
+    padding-left: 3.5em;
+  }
+}
+@media (max-width: 1113.6px) {
+  .contact-form-container {
+    display: none;
+  }
+}
+
+/* Smartpone, tablet */
+
+@media (max-width: 600px) {
+  .menu-ul {
+    margin-right: 3rem;
+  }
+  .menu-link {
+    font-size: 3rem;
+  }
 }

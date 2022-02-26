@@ -6,6 +6,10 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Footer = () => {
+  const listAnimation = {
+    hover: { scale: 1.1 },
+    tap: { scale: 0.8 },
+  };
   return (
     <footer>
       <div className="container-fluid footer-container">
@@ -17,18 +21,30 @@ const Footer = () => {
               </div>
               <div className="footer-details">
                 <div className="col-lg-5 col-md-6 col-sm-12  column">
-                  <span className="footer-slogan">Let's Get Creative</span>
-                  <br />
-                  <span className="footer-text">
-                    © 2021 All Rights Reserved
-                  </span>
+                  <ul>
+                    <li>
+                      <span className="footer-slogan">
+                        Good design is a language
+                      </span>
+                    </li>
+                    <li>
+                      <span className="footer-text">
+                        © 2021 All Rights Reserved
+                      </span>
+                    </li>
+                  </ul>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 column">
-                  <span className="footer-text">K.Arteh@hotmail.com</span>
-                  <br />
-                  <span className="footer-text">
-                    © 2021 All Rights Reserved
-                  </span>
+                  <ul>
+                    <li>
+                      <span className="footer-text">K.Arteh@hotmail.com</span>
+                    </li>
+                    <li>
+                      <span className="footer-text">
+                        © 2021 All Rights Reserved
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -37,17 +53,35 @@ const Footer = () => {
             <div className="footer-social">
               <span className="footer-social-title">Keep In Touch</span>
               <div className="social-media">
-                <a className="social-icons" href="#">
-                  <MdMail className="fa" />
-                </a>
-                <a className="social-icons">
-                  <AiFillLinkedin />
-                </a>
-                <a className="social-icons">
-                  <span>
-                    <BsGithub />
-                  </span>
-                </a>
+                <ul>
+                  <motion.li
+                    variants={listAnimation}
+                    whileHover="hover"
+                    whileTap="tap"
+                  >
+                    <a href="#">
+                      <MdMail className="fa" />
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    variants={listAnimation}
+                    whileHover="hover"
+                    whileTap="tap"
+                  >
+                    <a href="#">
+                      <AiFillLinkedin />
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    variants={listAnimation}
+                    whileHover="hover"
+                    whileTap="tap"
+                  >
+                    <a href="#">
+                      <BsGithub />
+                    </a>
+                  </motion.li>
+                </ul>
               </div>
             </div>
           </div>

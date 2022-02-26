@@ -14,7 +14,6 @@ const Home = () => {
           <div className="col h1-container">
             <h3 className="intro-h3">I'm Khadar Arteh.</h3>
             <h2 className="intro-h2">Junior Full</h2>
-
             <h1 className="intro-h1">Stack Developer.</h1>
           </div>
         </div>

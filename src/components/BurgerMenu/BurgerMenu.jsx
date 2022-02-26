@@ -69,10 +69,10 @@ const BurgerMenu = () => {
               >
                 <div className="menu-items">
                   <div className="row">
-                    <div className="col-lg-9 contact-form-container">
+                    <div className="col-lg-8 contact-form-container">
                       <ContactForm />
                     </div>
-                    <div className="col-lg-3 menu-ul-container">
+                    <div className="col-lg-4 menu-ul-container">
                       <ul
                         className="menu-ul"
                         onClick={() => setShowMenu(false)}
@@ -113,7 +113,7 @@ const BurgerMenu = () => {
                           whileTap="tap"
                           className="menu-li"
                         >
-                          <a className="menu-link" href="">
+                          <a className="menu-link" href="#blog">
                             Blog
                           </a>
                         </motion.li>

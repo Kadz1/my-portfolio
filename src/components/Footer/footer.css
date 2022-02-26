@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer {
@@ -41,7 +41,7 @@ footer {
   padding-top: 4rem;
   padding-left: 4rem;
   margin: 0;
-  background-color: #6f77f4;
+  background-color: var(--color-accent);
 }
 
 .footer-details {
@@ -49,39 +49,33 @@ footer {
   align-items: center;
 }
 
-@media (max-width: 1024px) {
-  .footer-details {
-    display: inline;
-    margin: 0 auto;
-  }
+.column ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-@media (max-width: 1024px) {
-  .column {
-    margin: 0.5rem auto 1.2rem auto;
-  }
+.column ul li {
+  padding-bottom: 0.1rem;
 }
 
 .footer-h2 {
+  font-family: var(--tertiary-font-family);
   color: #fff;
   margin-bottom: 0;
   padding: 0;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: bold;
 }
 
 .footer-slogan {
   color: #fff;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-  font-weight: 300;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .footer-text {
   color: #fff;
-  margin: 0;
-  padding: 0;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -101,21 +95,50 @@ footer {
 }
 
 .footer-social-title {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .social-media {
-  display: inline-block;
+  display: flex;
+  margin-top: 0.1rem;
 }
-
-.social-icons {
-  color: #3a3a3a;
-  font-size: 1.3rem;
+.social-media ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.social-media ul li {
+  font-size: 1.4rem;
   cursor: pointer;
-  padding-right: 1.5rem;
+  padding-right: 2rem;
 }
 
-.social-icons:hover {
+.social-media ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  color: var(--color-accent);
+}
+
+/* .social-icons:hover {
+  display: inline-block;
   color: #6f77f4;
+  transform: scale(1.1);
+} */
+
+@media (max-width: 1024px) {
+  .footer-details {
+    display: inline;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .column {
+    margin: 0.5rem auto 1.2rem auto;
+  }
 }

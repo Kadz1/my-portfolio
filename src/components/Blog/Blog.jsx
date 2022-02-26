@@ -25,14 +25,8 @@ const Blog = () => {
                   results.
                 </p>
               </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <h3 className="blog-h3">WHY YOU NEED A PROFESSIONAL DESIGNER.</h3>
-              <div>
-                <p className="blog-p">
-                  Don’t rush or skip any steps. Start with the basics for better
-                  results.
-                </p>
+              <div className="date-container">
+                <span className="blog-date">January 20, 2022</span>
               </div>
             </div>
             <div className="col-md-4 col-sm-6">
@@ -42,6 +36,21 @@ const Blog = () => {
                   Don’t rush or skip any steps. Start with the basics for better
                   results.
                 </p>
+              </div>
+              <div className="date-container">
+                <span className="blog-date">January 14, 2022</span>
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <h3 className="blog-h3">WHY YOU NEED A PROFESSIONAL DESIGNER.</h3>
+              <div>
+                <p className="blog-p">
+                  Don’t rush or skip any steps. Start with the basics for better
+                  results.
+                </p>
+              </div>
+              <div className="date-container">
+                <span className="blog-date">January 2, 2022</span>
               </div>
             </div>
           </div>

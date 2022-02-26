@@ -1,21 +1,12 @@
-import { React, useEffect } from "react";
+import { React, useEffect, Fragment } from "react";
 import "./skills.css";
-import {
-  FaGithub,
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaNodeJs,
-} from "react-icons/fa";
+
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { SiMongodb, SiJavascript, SiMysql } from "react-icons/si";
-import Parallax from "react-rellax";
 
 const Skills = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.6,
   });
   const animation = useAnimation();
 
@@ -28,7 +19,7 @@ const Skills = () => {
           stiffness: 260,
           damping: 40,
         },
-        rotate: [0, 360],
+        // rotate: [0, 360],
         scale: 1,
       });
     }
@@ -39,49 +30,62 @@ const Skills = () => {
     }
   }, [inView]);
 
+  const TagCloud = require("TagCloud");
+
+  var myTags = [
+    "React.js",
+    "Javascript",
+    "Bootstrap",
+    "MongoDB",
+    "Nodejs",
+    "ES6",
+    "Json",
+    "APIs",
+    "CSS",
+    "HTML",
+    "GitHub",
+    "Express",
+    "MySQL",
+    "JSX",
+  ];
+
+  var tagCloud = TagCloud(".content", myTags, {
+    // radius in px
+    radius: 300,
+
+    // animation speed
+    // slow, normal, fast
+    maxSpeed: "normal",
+    initSpeed: "normal",
+
+    // 0 = top
+    // 90 = left
+    // 135 = right-bottom
+    direction: 135,
+
+    // interact with cursor move on mouse out
+    keep: true,
+  });
+
   return (
     <div ref={ref} className="skills-Wrapper">
-      <div className="container skills-container">
-        <h1 className="skills-Header">Skills</h1>
-      </div>
-      <div>
+      <div className="skills-container">
+        <div className="container ">
+          <div className="skills-title-container">
+            <span className="skills-slogan">Knowledge Is Everything.</span>
+            <h1 className="skills-Header">
+              My <br /> Skills<span className="full-stop2">.</span>
+            </h1>
+            <p>
+              <span>It's not over yet!</span>I'm committed to lifelong learning
+              and the development of further skills.
+            </p>
+          </div>
+        </div>
         <div className="animation-container">
-          <motion.span animate={animation} className="react">
-            <FaReact />
-          </motion.span>
-          <motion.span animate={animation} className="javascript ">
-            <SiJavascript />
-          </motion.span>
-          <motion.span animate={animation} className="github">
-            <FaGithub />
-          </motion.span>
-          <motion.span animate={animation} className="bootstrap">
-            <FaBootstrap />
-          </motion.span>
-          <motion.span animate={animation} className="html">
-            <FaHtml5 />
-          </motion.span>
-          <motion.span animate={animation} className="css">
-            <FaCss3Alt />
-          </motion.span>
-          <motion.span animate={animation} className="mongo">
-            <SiMongodb />
-          </motion.span>
-          <motion.span animate={animation} className="node">
-            <FaNodeJs />
-          </motion.span>
-          <motion.span animate={animation} className="mysql">
-            <SiMysql />
-          </motion.span>
-          <motion.span animate={animation} className="ES6">
-            ES6
-          </motion.span>
-          <motion.span animate={animation} className="api">
-            API
-          </motion.span>
+          <motion.div className="content" animate={animation}></motion.div>
         </div>
       </div>
-      <hr />
     </div>
   );
 };
